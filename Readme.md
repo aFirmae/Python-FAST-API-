@@ -10,7 +10,7 @@ some API endpoints are
 
 # main work 
 
-connect with a database 
+1. Connect Backend with a database (Any database) 
 
 
 
