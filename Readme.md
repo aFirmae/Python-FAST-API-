@@ -1,4 +1,4 @@
-# A small Backend project For SOUHARDA
+# A small Backend project
 
 make some simple API endpoints using python (fastpi)
 
