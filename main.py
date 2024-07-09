@@ -14,11 +14,11 @@ def todo():
 @app.post("/upload/")
 async def create_upload_file(file: UploadFile = File(...)):
     return {
-        "file_size": len(await file.read()),
+        "file_size": len(await file.read()) // 1024,
         "file_name": file.filename,
         "file_type": file.content_type
     }
 
 @app.get("/execute/{a}/{b}")
-def add(a: int = Path(description="First Number"), b: int = Path(description="Second Number")):
+def add(a: int , b: int):
     return {"Result": a + b}
